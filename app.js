@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors({
     origin: ["https://shoppingcartfrontend-iwyor2z5d-sebanti2003.vercel.app"],
     methods: ["GET", "PUT", "DELETE", "PATCH", "POST"],
-    allowedHeaders:["*"]
+    allowedHeaders:["Access-Control-Allow-Origin","*"]
 }))
 if(process.env.PRODUCTION===dev){
     app.use(morgan('dev'))
