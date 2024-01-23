@@ -9,9 +9,6 @@ app.use(cors({
     methods: ["GET", "PUT", "DELETE", "PATCH", "POST"],
     allowedHeaders:["Access-Control-Allow-Origin","*"]
 }))
-if(process.env.PRODUCTION===dev){
-    app.use(morgan('dev'))
-}
 
 app.use('/api/v1',Uploadimage);
 module.exports=app;
