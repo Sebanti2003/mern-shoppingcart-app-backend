@@ -5,7 +5,7 @@ const morgan=require('morgan');
 const Uploadimage = require('./routes/Uploadimage');
 app.use(express.json());
 app.use(cors({
-    origin: ["https://shoppingcartfrontend-iwyor2z5d-sebanti2003.vercel.app"],
+    origin: ["https://shoppingcartfrontend-iwyor2z5d-sebanti2003.vercel.app","*"],
     methods: ["GET", "PUT", "DELETE", "PATCH", "POST"],
     allowedHeaders:["Access-Control-Allow-Origin","*"]
 }))
